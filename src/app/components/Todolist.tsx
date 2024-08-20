@@ -3,7 +3,7 @@ import { useState } from "react"
 
 const Todolist = () => {
 const [text, setText] = useState('');
-const [newTodo, setNewTodo] = useState([]);
+const [newTodo, setNewTodo] = useState<string[]>([]);
 const [editing, setEditing] = useState(null);
  
 function handleTodo(){
